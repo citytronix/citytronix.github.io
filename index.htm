@@ -161,4 +161,10 @@ body {
 }
 
 	</style>
+	<script>
+		jQuery("img").on("taphold", function(event) {
+   event.preventDefault();
+   event.stopImmediatePropagation();
+})
+	</script>
 </html>
