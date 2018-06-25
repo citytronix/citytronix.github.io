@@ -5,12 +5,8 @@
 	<body>
 		<img class="title" src="CITYTRONIX.png" onContextMenu="return false;">
 
-		<audio controls autoplay>
-  			<source src="winsome.mp3" type="audio/mpeg">
-	  		/* Internet Explorer 8 or earlier versions do not support the audio element. */
-		</audio>
 		
-		<div class="video-responsive" class="imgbox" align="center">
+		<div class="video-responsive" align="center">
 			<a href="https://soundcloud.com/citytronix/io-1">
 				<img class="center-fit" src="IO.jpg" style="width:600px;height:600px;"></img>
 			</a>
@@ -21,7 +17,7 @@
 	<div class="float_center">
 		<ul class="child">
 			<li><b><a href="https://sellfy.com/p/IzJB/" target="_blank">SAMPLE PACK</a></b></li>
-			<li><b><a href="https://citytronix.bandcamp.com/album/ambient-works">AMBIENT WORKS [LP]</b></a></li>
+			<li><b><a href="https://citytronix.bandcamp.com/album/ambient-works">AMBIENT WORKS</b></a></li>
 			<li><b><a href="https://soundcloud.com/citytronix/insaciavel">INSACIÁVEL</b></a></li>
 			<li><b><a href="https://soundcloud.com/citytronix/insaciavel-2">INSACIÁVEL PT. II</b></a></li>
 			<li><b><a href="https://soundcloud.com/citytronix/io-1">IO</b></a></li>
@@ -41,24 +37,42 @@
 
 </section>
 	
-	<h1><a href="https://soundcloud.com/klahrk/citytronix-fruitfuck-klahrk-remix-1">FRUITFUCK (KLAHRK REMIX)</a></h1>
-	
+<div class="container">
+	<h1><a href="https://soundcloud.com/klahrk/citytronix-fruitfuck-klahrk-remix-1"><center>LISTEN - FRUITFUCK (KLAHRK REMIX)</center></a></h1>
+</div>	
+
+<audio controls autoplay>
+  			<source src="winsome.mp3" type="audio/mpeg">
+	  		/* Internet Explorer 8 or earlier versions do not support the audio element. */
+		</audio>
+
 	</body>
 	<style>
+
 		h1 {
+		position: absolute;
+  		bottom:0;
+
+   		width: 99%;
+   		height: 20px;   /* Height of the footer */
+		display: block;
+		}
+
+		h1 a {
 			font-family: arial;
-			font-size: 50px;
+			font-size: 20px;
+			text-decoration: none;
 			color: white;
-			text-align: center;
 			transition: 0.2s;
-			position: absolute;
+
+			display: inline;
+			width: 100px;
 		}
 		
 		h1 a:hover {
-			opacity: 0.6;
-    			filter: alpha(opacity=60); /* For IE8 and earlier */
 			transition: 0.2s;
-			position: absolute;
+			text-decoration: none;
+			color: maroon;
 		}
 		
 		
@@ -90,19 +104,8 @@
 			pointer-events: none;
 		}
 		
-		* {
-   margin: 0;
-   padding: 0;
-  }
-  .imgbox {
-   display: grid;
-   height: 50%;
-  }
-  .center-fit {
-   max-width: 100%;
-   max-height: 100vh;
-   margin: auto;
-  }
+
+
 
 .float_center {
   float: left;
@@ -169,21 +172,20 @@ ul a {
 }
 @keyframes flickerAnimation {
   0%   { color: black; 
-	background-color: #ad3737;
+	background-color: maroon;
 	}
   
 30%  { color: black;
-	background-color: #962e2e; 
+	background-color: white; 
 	}
   
 70% { color: black;
-	background-color: #681e1e;
+	background-color: maroon;
 	}
 100% { color: black;
-	background-color: #962e2e;
+	background-color: white;
 	}
 }
-
 audio {
 visibility: hidden;
 }
