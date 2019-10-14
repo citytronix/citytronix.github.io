@@ -305,31 +305,6 @@
 		text-decoration: none;
 		color: grey;
 	}
-	
-	a + div {
-		/*visability: hidden; */
-		display: none;
-		position: absolute;
-		transition: 2s linear;
-		-webkit-transition: 2s linear;
-	}
-
-	a:hover + div {
-		cursor: crosshair;
-		display: block;
-		position: inline;
-		/*visibility: visible; */
-		width: 180px;
-		font-size: 10px;
-		font-family: arial;
-		background: white;
-		color: black;
-		border-radius: 5px;
-		pointer-events: none;
-		padding: 5px;
-		transition: 2s linear;
-		-webkit-transition: 2s linear;
-	}
 
 	img:hover {
 	-webkit-filter: brightness (60%);
@@ -378,13 +353,6 @@ img {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-}
-
-.center {
-	position: absolute;
-	padding-left: 20%;
-	max-width: 100%;
-	max-height: auto;
 }
 
 .overlay:hover {
