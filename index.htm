@@ -286,12 +286,6 @@
     	background: #FF0000;
 	}
 
-	.imglink:hover > .overlay {
-		background-color: #000;
-		opacity: 0.5;
-		border-radius: 5px;
-	}
-
 	li {
 		font-weight: bolder;
 		list-style-type: square;
@@ -333,16 +327,7 @@ img {
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-o-user-select: none;
-	user-select: none;
-	border-radius: 5px;
-	-webkit-filter: brightness (100%);
-    	-webkit-transition: all 0.45s ease;
-    	-moz-transition: all 0.45s ease;
-    	-o-transition: all 0.45s ease;
-    	-ms-transition: all 0.45s ease;
-    	transition: all 0.45s ease;
-	opacity: 1;
-	filter: alpha(opacity=100); /* For IE8 and earlier */
+	user-select: none; /* For IE8 and earlier */
 }
 
 .noselect {
@@ -356,7 +341,7 @@ img {
 }
 		      
 .container {
-  position: relative;
+  position: absolute;
   width: 50%;
 }
 
