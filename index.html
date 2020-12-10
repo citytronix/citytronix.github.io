@@ -740,6 +740,12 @@ display: hidden;
 </style>
 
 <script type="text/javascript">
+	
+	function showOverlay() {
+  $('.overlay .popup').show()
+}
+setTimeout(showOverlay, 2000)
+	
 myID = document.getElementById("myID");
 var myScrollFunc = function() {
   var y = window.scrollY;
